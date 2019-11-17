@@ -193,6 +193,14 @@ export default {
     return {
       msg: 'Book'
     }
+  },
+  methods: {
+    showLexemes () {
+      console.log(this.$store.state.lexemes)
+    }
+  },
+  created () {
+    this.showLexemes()
   }
 }
 </script>
