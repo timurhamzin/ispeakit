@@ -196,7 +196,9 @@ export default {
   },
   methods: {
     showLexemes () {
-      console.log(this.$store.state.lexemes)
+      this.$store.state.lexemes.forEach(element => {
+        console.log(element)
+      })
     }
   },
   created () {
