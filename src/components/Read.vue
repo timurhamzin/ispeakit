@@ -14,7 +14,6 @@ export default {
     DashBoard: DashBoard,
     Book: Book
   }
-
 }
 </script>
 

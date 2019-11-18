@@ -6,8 +6,8 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
   // repetitions: 5,
   state: {
-    lexemes: [
-      { name: 'This', repetitions: 5 }
-    ]
+    lexemes: {
+      'This': {repetitions: 5, repeated: 0}
+    }
   }
 })

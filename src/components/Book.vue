@@ -1,5 +1,5 @@
 <template>
-  <p>
+  <div id="book">
     <span id="this" class="wd">This</span>
     <span id="project" class="wd">project</span>
     <span id="will" class="wd">will</span>
@@ -183,7 +183,7 @@
     <span id="page" class="wd">page</span>
     <span id=")" class="wd">)</span>
     <span id="." class="wd">.</span>
-  </p>
+  </div>
 </template>
 
 <script>
@@ -199,10 +199,26 @@ export default {
       this.$store.state.lexemes.forEach(element => {
         console.log(element)
       })
+    },
+    updateLexeme: function (event) {
+      let el = event.target
+      if (el.id in this.$store.state.lexemes) {
+        this.$store.state.lexemes[el.id].repeated += 1
+      } else {
+        this.$store.state.lexemes[el.id] = {lexeme: el.id, repetitions: 5, repeated: 0}
+      }
+      // console.log(this.$store.state.lexemes[el.id])
+      console.log(this.$store.state.lexemes)
     }
   },
-  created () {
-    this.showLexemes()
+  mounted () {
+    let children = this.$el.children
+    for (var i = 0; i < children.length; i++) {
+      let child = children[i]
+      child.addEventListener('click', this.updateLexeme)
+      // console.log(child)
+    }
+    // this.showLexemes()
   }
 }
 </script>

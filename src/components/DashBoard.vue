@@ -1,6 +1,6 @@
 <template>
   <div>
-    Lexemes: {{this.lexemes[0]}}
+    Lexemes: {{this.lexemes}}
   </div>
 </template>>
 
