@@ -201,14 +201,7 @@ export default {
       })
     },
     updateLexeme: function (event) {
-      let el = event.target
-      if (el.id in this.$store.state.lexemes) {
-        this.$store.state.lexemes[el.id].repeated += 1
-      } else {
-        this.$store.state.lexemes[el.id] = {lexeme: el.id, repetitions: 5, repeated: 0}
-      }
-      // console.log(this.$store.state.lexemes[el.id])
-      console.log(this.$store.state.lexemes)
+      this.$store.commit('updateLexemes', event.target)
     }
   },
   mounted () {
