@@ -1,6 +1,6 @@
 <template>
   <div id="book">
-    <span id="this" class="wd">This</span>
+    <span id="this" v-bind:class="lexemeClasses" ref="el">This</span>
     <span id="project" class="wd">project</span>
     <span id="will" class="wd">will</span>
     <span id="help" class="wd">help</span>
@@ -191,13 +191,14 @@ export default {
   name: 'Book',
   data () {
     return {
-      msg: 'Book'
+      msg: 'Book',
+      fsize: 10
     }
   },
   methods: {
     showLexemes () {
       this.$store.state.lexemes.forEach(element => {
-        console.log(element)
+        // console.log(element)
       })
     },
     updateLexeme: function (event) {
@@ -212,6 +213,38 @@ export default {
       // console.log(child)
     }
     // this.showLexemes()
+  },
+  computed: {
+    cssProps () {
+      return {
+        'fsize': this.fsize,
+        '--bg-color-this': '#00cc00'
+      }
+    },
+    lexemeClasses () {
+      let a = this.$store.state.lexemes['count']
+      if (this.$refs.el) {
+        console.log(this.$refs.el.className === 'clicked')
+        // console.log(this.$store.state.lexemes[this.$refs.el])
+        // this.$store.commit('updateLexemes', event.target)
+        // a = a + 1
+        return {
+          clicked: this.$refs.el.className !== 'clicked'
+          // clicked: (this.$store.state.lexemes[this.$refs.el.id] > 0 & (a > 0))
+        }
+      } else {
+        return {
+          clicked: false
+        }
+      }
+    }
   }
 }
 </script>
+
+<style>
+  .clicked {
+    /* background-color: var(--bg-color-this); */
+    font-size: 18px;
+  }
+</style>
