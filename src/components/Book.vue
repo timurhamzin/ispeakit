@@ -215,26 +215,20 @@ export default {
     // this.showLexemes()
   },
   computed: {
-    cssProps () {
-      return {
-        'fsize': this.fsize,
-        '--bg-color-this': '#00cc00'
-      }
-    },
     lexemeClasses () {
       let a = this.$store.state.lexemes['count']
       if (this.$refs.el) {
-        console.log(this.$refs.el.className === 'clicked')
         // console.log(this.$store.state.lexemes[this.$refs.el])
         // this.$store.commit('updateLexemes', event.target)
         // a = a + 1
+        let repeated = this.$store.state.lexemes[this.$refs.el.id].repeated
+        console.log(repeated)
         return {
-          clicked: this.$refs.el.className !== 'clicked'
+          repeated0: repeated === 0,
+          repeated1: repeated === 1,
+          repeated2: repeated === 2,
+          repeated3: repeated === 3
           // clicked: (this.$store.state.lexemes[this.$refs.el.id] > 0 & (a > 0))
-        }
-      } else {
-        return {
-          clicked: false
         }
       }
     }
@@ -243,8 +237,20 @@ export default {
 </script>
 
 <style>
-  .clicked {
+  .repeated0 {
     /* background-color: var(--bg-color-this); */
-    font-size: 18px;
+    font-size: 10px;
+  }
+  .repeated1 {
+    /* background-color: var(--bg-color-this); */
+    font-size: 12px;
+  }
+  .repeated2 {
+    /* background-color: var(--bg-color-this); */
+    font-size: 14px;
+  }
+  .repeated3 {
+    /* background-color: var(--bg-color-this); */
+    font-size: 16px;
   }
 </style>
