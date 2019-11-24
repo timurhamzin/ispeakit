@@ -1,188 +1,188 @@
 <template>
   <div id="book">
-    <span id="this" v-bind:class="lexemeClasses" ref="el">This</span>
-    <span id="project" class="wd">project</span>
-    <span id="will" class="wd">will</span>
-    <span id="help" class="wd">help</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="to" class="wd">to</span>
-    <span id="learn" class="wd">learn</span>
-    <span id="a" class="wd">a</span>
-    <span id="new" class="wd">new</span>
-    <span id="language" class="wd">language</span>
-    <span id="without" class="wd">without</span>
-    <span id="any" class="wd">any</span>
-    <span id="textbook" class="wd">textbooks</span>
-    <span id="or" class="wd">or</span>
-    <span id="dictionary" class="wd">dictionaries</span>
-    <span id="." class="wd">.</span>
-    <span id=" " class="wd"></span>
-    <span id="-PRON-" class="wd">It</span>
-    <span id="automate" class="wd">automates</span>
-    <span id="the" class="wd">the</span>
-    <span id="process" class="wd">process</span>
-    <span id="of" class="wd">of</span>
-    <span id="learn" class="wd">learning</span>
-    <span id="a" class="wd">a</span>
-    <span id="language" class="wd">language</span>
-    <span id="," class="wd">,</span>
-    <span id="rid" class="wd">ridding</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="of" class="wd">of</span>
-    <span id="all" class="wd">all</span>
-    <span id="the" class="wd">the</span>
-    <span id="overhead" class="wd">overhead</span>
-    <span id="mechanical" class="wd">mechanical</span>
-    <span id="work" class="wd">work</span>
-    <span id="need" class="wd">needed</span>
-    <span id="in" class="wd">in</span>
-    <span id="the" class="wd">the</span>
-    <span id="process" class="wd">process</span>
-    <span id="." class="wd">.</span>
-    <span id="the" class="wd">The</span>
-    <span id="main" class="wd">main</span>
-    <span id="problem" class="wd">problem</span>
-    <span id="when" class="wd">when</span>
-    <span id="learn" class="wd">learning</span>
-    <span id="a" class="wd">a</span>
-    <span id="new" class="wd">new</span>
-    <span id="language" class="wd">language</span>
-    <span id="be" class="wd">is</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="do" class="wd">do</span>
-    <span id="not" class="wd">n't</span>
-    <span id="understand" class="wd">understand</span>
-    <span id="-PRON-" class="wd">it</span>
-    <span id="," class="wd">,</span>
-    <span id="and" class="wd">and</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="can" class="wd">ca</span>
-    <span id="not" class="wd">n't</span>
-    <span id="learn" class="wd">learn</span>
-    <span id="something" class="wd">something</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="do" class="wd">do</span>
-    <span id="not" class="wd">n't</span>
-    <span id="understand" class="wd">understand</span>
-    <span id="." class="wd">.</span>
-    <span id="on" class="wd">On</span>
-    <span id="the" class="wd">the</span>
-    <span id="other" class="wd">other</span>
-    <span id="hand" class="wd">hand</span>
-    <span id="," class="wd">,</span>
-    <span id="understand" class="wd">understanding</span>
-    <span id="something" class="wd">something</span>
-    <span id="be" class="wd">is</span>
-    <span id="all" class="wd">all</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="need" class="wd">need</span>
-    <span id="to" class="wd">to</span>
-    <span id="learn" class="wd">learn</span>
-    <span id="-PRON-" class="wd">it</span>
-    <span id="." class="wd">.</span>
-    <span id="this" class="wd">This</span>
-    <span id="project" class="wd">project</span>
-    <span id="help" class="wd">helps</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="solve" class="wd">solve</span>
-    <span id="this" class="wd">this</span>
-    <span id="problem" class="wd">problem</span>
-    <span id="by" class="wd">by</span>
-    <span id="provide" class="wd">providing</span>
-    <span id="-PRON-" class="wd">you</span>
-    <span id="with" class="wd">with</span>
-    <span id="a" class="wd">a</span>
-    <span id="tool" class="wd">tool</span>
-    <span id="to" class="wd">to</span>
-    <span id="translate" class="wd">translate</span>
-    <span id="book" class="wd">books</span>
-    <span id="sentence" class="wd">sentence</span>
-    <span id="-" class="wd">-</span>
-    <span id="by" class="wd">by</span>
-    <span id="-" class="wd">-</span>
-    <span id="sentence" class="wd">sentence</span>
-    <span id="." class="wd">.</span>
-    <span id="as" class="wd">As</span>
-    <span id="the" class="wd">the</span>
-    <span id="most" class="wd">most</span>
-    <span id="natural" class="wd">natural</span>
-    <span id="way" class="wd">way</span>
-    <span id="of" class="wd">of</span>
-    <span id="learn" class="wd">learning</span>
-    <span id="a" class="wd">a</span>
-    <span id="language" class="wd">language</span>
-    <span id="be" class="wd">is</span>
-    <span id="through" class="wd">through</span>
-    <span id="hearing" class="wd">hearing</span>
-    <span id="," class="wd">,</span>
-    <span id="the" class="wd">the</span>
-    <span id="result" class="wd">resulting</span>
-    <span id="translation" class="wd">translation</span>
-    <span id="be" class="wd">is</span>
-    <span id="voice" class="wd">voiced</span>
-    <span id="along" class="wd">along</span>
-    <span id="with" class="wd">with</span>
-    <span id="the" class="wd">the</span>
-    <span id="source" class="wd">source</span>
-    <span id="text" class="wd">text</span>
-    <span id="to" class="wd">to</span>
-    <span id="an" class="wd">an</span>
-    <span id="mp3" class="wd">mp3</span>
-    <span id="file" class="wd">file</span>
-    <span id="." class="wd">.</span>
-    <span id="the" class="wd">The</span>
-    <span id="result" class="wd">resulting</span>
-    <span id="file" class="wd">file</span>
-    <span id="be" class="wd">is</span>
-    <span id="serve" class="wd">served</span>
-    <span id="with" class="wd">with</span>
-    <span id="subtitle" class="wd">subtitles</span>
-    <span id="to" class="wd">to</span>
-    <span id="help" class="wd">help</span>
-    <span id="-PRON-" class="wd">your</span>
-    <span id="utilise" class="wd">utilise</span>
-    <span id="-PRON-" class="wd">your</span>
-    <span id="vision" class="wd">vision</span>
-    <span id="as" class="wd">as</span>
-    <span id="well" class="wd">well</span>
-    <span id="as" class="wd">as</span>
-    <span id="-PRON-" class="wd">your</span>
-    <span id="hearing" class="wd">hearing</span>
-    <span id="." class="wd">.</span>
-    <span id="subtitle" class="wd">Subtitles</span>
-    <span id="in" class="wd">in</span>
-    <span id="the" class="wd">the</span>
-    <span id="form" class="wd">form</span>
-    <span id="of" class="wd">of</span>
-    <span id="lrc" class="wd">lrc</span>
-    <span id="-" class="wd">-</span>
-    <span id="file" class="wd">files</span>
-    <span id="can" class="wd">can</span>
-    <span id="be" class="wd">be</span>
-    <span id="play" class="wd">played</span>
-    <span id="by" class="wd">by</span>
-    <span id="a" class="wd">a</span>
-    <span id="number" class="wd">number</span>
-    <span id="of" class="wd">of</span>
-    <span id="music" class="wd">music</span>
-    <span id="-" class="wd">-</span>
-    <span id="play" class="wd">playing</span>
-    <span id="piece" class="wd">pieces</span>
-    <span id="of" class="wd">of</span>
-    <span id="software" class="wd">software</span>
-    <span id="," class="wd">,</span>
-    <span id="available" class="wd">available</span>
-    <span id="for" class="wd">for</span>
-    <span id="free" class="wd">free</span>
-    <span id="(" class="wd">(</span>
-    <span id="check" class="wd">check</span>
-    <span id="out" class="wd">out</span>
-    <span id="lrc" class="wd">lrc</span>
-    <span id="wiki" class="wd">wiki</span>
-    <span id="-" class="wd">-</span>
-    <span id="page" class="wd">page</span>
-    <span id=")" class="wd">)</span>
-    <span id="." class="wd">.</span>
+    <span id="this" v-bind:class="lxClass('this')">This</span>
+    <span id="project" v-bind:class="lxClass('project')">project</span>
+    <span id="will" v-bind:class="lxClass('will')">will</span>
+    <span id="help" v-bind:class="lxClass('help')">help</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="to" v-bind:class="lxClass('to')">to</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learn</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="new" v-bind:class="lxClass('new')">new</span>
+    <span id="language" v-bind:class="lxClass('language')">language</span>
+    <span id="without" v-bind:class="lxClass('without')">without</span>
+    <span id="any" v-bind:class="lxClass('any')">any</span>
+    <span id="textbook" v-bind:class="lxClass('textbook')">textbooks</span>
+    <span id="or" v-bind:class="lxClass('or')">or</span>
+    <span id="dictionary" v-bind:class="lxClass('dictionary')">dictionaries</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id=" " v-bind:class="lxClass(' ')"></span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">It</span>
+    <span id="automate" v-bind:class="lxClass('automate')">automates</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="process" v-bind:class="lxClass('process')">process</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learning</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="language" v-bind:class="lxClass('language')">language</span>
+    <span id="," v-bind:class="lxClass(',')">,</span>
+    <span id="rid" v-bind:class="lxClass('rid')">ridding</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="all" v-bind:class="lxClass('all')">all</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="overhead" v-bind:class="lxClass('overhead')">overhead</span>
+    <span id="mechanical" v-bind:class="lxClass('mechanical')">mechanical</span>
+    <span id="work" v-bind:class="lxClass('work')">work</span>
+    <span id="need" v-bind:class="lxClass('need')">needed</span>
+    <span id="in" v-bind:class="lxClass('in')">in</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="process" v-bind:class="lxClass('process')">process</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="the" v-bind:class="lxClass('the')">The</span>
+    <span id="main" v-bind:class="lxClass('main')">main</span>
+    <span id="problem" v-bind:class="lxClass('problem')">problem</span>
+    <span id="when" v-bind:class="lxClass('when')">when</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learning</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="new" v-bind:class="lxClass('new')">new</span>
+    <span id="language" v-bind:class="lxClass('language')">language</span>
+    <span id="be" v-bind:class="lxClass('be')">is</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="do" v-bind:class="lxClass('do')">do</span>
+    <span id="not" v-bind:class="lxClass('not')">n't</span>
+    <span id="understand" v-bind:class="lxClass('understand')">understand</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">it</span>
+    <span id="," v-bind:class="lxClass(',')">,</span>
+    <span id="and" v-bind:class="lxClass('and')">and</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="can" v-bind:class="lxClass('can')">ca</span>
+    <span id="not" v-bind:class="lxClass('not')">n't</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learn</span>
+    <span id="something" v-bind:class="lxClass('something')">something</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="do" v-bind:class="lxClass('do')">do</span>
+    <span id="not" v-bind:class="lxClass('not')">n't</span>
+    <span id="understand" v-bind:class="lxClass('understand')">understand</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="on" v-bind:class="lxClass('on')">On</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="other" v-bind:class="lxClass('other')">other</span>
+    <span id="hand" v-bind:class="lxClass('hand')">hand</span>
+    <span id="," v-bind:class="lxClass(',')">,</span>
+    <span id="understand" v-bind:class="lxClass('understand')">understanding</span>
+    <span id="something" v-bind:class="lxClass('something')">something</span>
+    <span id="be" v-bind:class="lxClass('be')">is</span>
+    <span id="all" v-bind:class="lxClass('all')">all</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="need" v-bind:class="lxClass('need')">need</span>
+    <span id="to" v-bind:class="lxClass('to')">to</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learn</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">it</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="this" v-bind:class="lxClass('this')">This</span>
+    <span id="project" v-bind:class="lxClass('project')">project</span>
+    <span id="help" v-bind:class="lxClass('help')">helps</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="solve" v-bind:class="lxClass('solve')">solve</span>
+    <span id="this" v-bind:class="lxClass('this')">this</span>
+    <span id="problem" v-bind:class="lxClass('problem')">problem</span>
+    <span id="by" v-bind:class="lxClass('by')">by</span>
+    <span id="provide" v-bind:class="lxClass('provide')">providing</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">you</span>
+    <span id="with" v-bind:class="lxClass('with')">with</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="tool" v-bind:class="lxClass('tool')">tool</span>
+    <span id="to" v-bind:class="lxClass('to')">to</span>
+    <span id="translate" v-bind:class="lxClass('translate')">translate</span>
+    <span id="book" v-bind:class="lxClass('book')">books</span>
+    <span id="sentence" v-bind:class="lxClass('sentence')">sentence</span>
+    <span id="-" v-bind:class="lxClass('-')">-</span>
+    <span id="by" v-bind:class="lxClass('by')">by</span>
+    <span id="-" v-bind:class="lxClass('-')">-</span>
+    <span id="sentence" v-bind:class="lxClass('sentence')">sentence</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="as" v-bind:class="lxClass('as')">As</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="most" v-bind:class="lxClass('most')">most</span>
+    <span id="natural" v-bind:class="lxClass('natural')">natural</span>
+    <span id="way" v-bind:class="lxClass('way')">way</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="learn" v-bind:class="lxClass('learn')">learning</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="language" v-bind:class="lxClass('language')">language</span>
+    <span id="be" v-bind:class="lxClass('be')">is</span>
+    <span id="through" v-bind:class="lxClass('through')">through</span>
+    <span id="hearing" v-bind:class="lxClass('hearing')">hearing</span>
+    <span id="," v-bind:class="lxClass(',')">,</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="result" v-bind:class="lxClass('result')">resulting</span>
+    <span id="translation" v-bind:class="lxClass('translation')">translation</span>
+    <span id="be" v-bind:class="lxClass('be')">is</span>
+    <span id="voice" v-bind:class="lxClass('voice')">voiced</span>
+    <span id="along" v-bind:class="lxClass('along')">along</span>
+    <span id="with" v-bind:class="lxClass('with')">with</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="source" v-bind:class="lxClass('source')">source</span>
+    <span id="text" v-bind:class="lxClass('text')">text</span>
+    <span id="to" v-bind:class="lxClass('to')">to</span>
+    <span id="an" v-bind:class="lxClass('an')">an</span>
+    <span id="mp3" v-bind:class="lxClass('mp3')">mp3</span>
+    <span id="file" v-bind:class="lxClass('file')">file</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="the" v-bind:class="lxClass('the')">The</span>
+    <span id="result" v-bind:class="lxClass('result')">resulting</span>
+    <span id="file" v-bind:class="lxClass('file')">file</span>
+    <span id="be" v-bind:class="lxClass('be')">is</span>
+    <span id="serve" v-bind:class="lxClass('serve')">served</span>
+    <span id="with" v-bind:class="lxClass('with')">with</span>
+    <span id="subtitle" v-bind:class="lxClass('subtitle')">subtitles</span>
+    <span id="to" v-bind:class="lxClass('to')">to</span>
+    <span id="help" v-bind:class="lxClass('help')">help</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">your</span>
+    <span id="utilise" v-bind:class="lxClass('utilise')">utilise</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">your</span>
+    <span id="vision" v-bind:class="lxClass('vision')">vision</span>
+    <span id="as" v-bind:class="lxClass('as')">as</span>
+    <span id="well" v-bind:class="lxClass('well')">well</span>
+    <span id="as" v-bind:class="lxClass('as')">as</span>
+    <span id="-PRON-" v-bind:class="lxClass('-PRON-')">your</span>
+    <span id="hearing" v-bind:class="lxClass('hearing')">hearing</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
+    <span id="subtitle" v-bind:class="lxClass('subtitle')">Subtitles</span>
+    <span id="in" v-bind:class="lxClass('in')">in</span>
+    <span id="the" v-bind:class="lxClass('the')">the</span>
+    <span id="form" v-bind:class="lxClass('form')">form</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="lrc" v-bind:class="lxClass('lrc')">lrc</span>
+    <span id="-" v-bind:class="lxClass('-')">-</span>
+    <span id="file" v-bind:class="lxClass('file')">files</span>
+    <span id="can" v-bind:class="lxClass('can')">can</span>
+    <span id="be" v-bind:class="lxClass('be')">be</span>
+    <span id="play" v-bind:class="lxClass('play')">played</span>
+    <span id="by" v-bind:class="lxClass('by')">by</span>
+    <span id="a" v-bind:class="lxClass('a')">a</span>
+    <span id="number" v-bind:class="lxClass('number')">number</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="music" v-bind:class="lxClass('music')">music</span>
+    <span id="-" v-bind:class="lxClass('-')">-</span>
+    <span id="play" v-bind:class="lxClass('play')">playing</span>
+    <span id="piece" v-bind:class="lxClass('piece')">pieces</span>
+    <span id="of" v-bind:class="lxClass('of')">of</span>
+    <span id="software" v-bind:class="lxClass('software')">software</span>
+    <span id="," v-bind:class="lxClass(',')">,</span>
+    <span id="available" v-bind:class="lxClass('available')">available</span>
+    <span id="for" v-bind:class="lxClass('for')">for</span>
+    <span id="free" v-bind:class="lxClass('free')">free</span>
+    <span id="(" v-bind:class="lxClass('(')">(</span>
+    <span id="check" v-bind:class="lxClass('check')">check</span>
+    <span id="out" v-bind:class="lxClass('out')">out</span>
+    <span id="lrc" v-bind:class="lxClass('lrc')">lrc</span>
+    <span id="wiki" v-bind:class="lxClass('wiki')">wiki</span>
+    <span id="-" v-bind:class="lxClass('-')">-</span>
+    <span id="page" v-bind:class="lxClass('page')">page</span>
+    <span id=")" v-bind:class="lxClass(')')">)</span>
+    <span id="." v-bind:class="lxClass('.')">.</span>
   </div>
 </template>
 
@@ -203,6 +203,20 @@ export default {
     },
     updateLexeme: function (event) {
       this.$store.commit('updateLexemes', event.target)
+      this.$forceUpdate()
+    },
+    lxClass (elId) {
+      let lexeme = this.$store.state.lexemes[elId]
+      if (lexeme) {
+        let repeated = this.$store.state.lexemes[elId].repeated
+        return {
+          repeated: true,
+          repeated0: repeated === 0,
+          repeated1: repeated === 1,
+          repeated2: repeated === 2,
+          repeated3: repeated === 3
+        }
+      }
     }
   },
   mounted () {
@@ -210,47 +224,27 @@ export default {
     for (var i = 0; i < children.length; i++) {
       let child = children[i]
       child.addEventListener('click', this.updateLexeme)
-      // console.log(child)
     }
-    // this.showLexemes()
   },
   computed: {
-    lexemeClasses () {
-      let a = this.$store.state.lexemes['count']
-      if (this.$refs.el) {
-        // console.log(this.$store.state.lexemes[this.$refs.el])
-        // this.$store.commit('updateLexemes', event.target)
-        // a = a + 1
-        let repeated = this.$store.state.lexemes[this.$refs.el.id].repeated
-        console.log(repeated)
-        return {
-          repeated0: repeated === 0,
-          repeated1: repeated === 1,
-          repeated2: repeated === 2,
-          repeated3: repeated === 3
-          // clicked: (this.$store.state.lexemes[this.$refs.el.id] > 0 & (a > 0))
-        }
-      }
-    }
   }
 }
 </script>
 
 <style>
+  .repeated {
+    background-color: brown;
+  }
   .repeated0 {
-    /* background-color: var(--bg-color-this); */
-    font-size: 10px;
+    opacity: 0.8;
   }
   .repeated1 {
-    /* background-color: var(--bg-color-this); */
-    font-size: 12px;
+    opacity: 0.6;
   }
   .repeated2 {
-    /* background-color: var(--bg-color-this); */
-    font-size: 14px;
+    opacity: 0.4;
   }
   .repeated3 {
-    /* background-color: var(--bg-color-this); */
-    font-size: 16px;
+    opacity: 0.2;
   }
 </style>
