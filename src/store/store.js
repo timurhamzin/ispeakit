@@ -12,8 +12,7 @@ export const store = new Vuex.Store({
     lastViewedLexeme: {
       elId: ''
     },
-    lexemesMaxCount: 3,
-    yandexTranslateApiKey: 'trnsl.1.1.20181030T164747Z.50350640be185f5d.a9c2d0892171111c7027edd85669141908d3301a'
+    lexemesMaxCount: 3
   },
   getters: {
     lexemes (state) {

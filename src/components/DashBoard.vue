@@ -5,6 +5,8 @@
 </template>>
 
 <script>
+import config from '../config.js'
+
 export default {
   computed: {
     // lexemes () {
@@ -33,26 +35,24 @@ export default {
           str.push(
             v !== null && typeof v === 'object'
               ? this.objToQueryStr(v, k)
-              : encodeURIComponent(k) + '=' + encodeURIComponent(v)
+              : k === 'url' ? v : k + '=' + v
+              // : encodeURIComponent(k) + '=' + encodeURIComponent(v)
           )
         }
       }
       return str.join('&')
     },
-    translate (text, fromLang, toLang) {
-      // var API_KEY_DICT = 'dict.1.1.20160504T082227Z.3ae50a41970727a5.c82f9dd5b83ce1eeccb9b5a35faf42712e9608b4'
-      var API_KEY_TRANS = 'trnsl.1.1.20160504T085023Z.3a0c0aab2bdd4774.7fd9d801d4ca73846151ec98418a94568793d90c'
+    yaDict (text, fromLang, toLang, transl) {
+      // Call example: https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=APIkey&lang=en-ru&text=time
+      // 'https://dictionary.yandex.net/api/v1/dicservice.json/lookup?'
       let queryObj = {
-        // url: 'https://dictionary.yandex.net/api/v1/dicservice.json/lookup',
-        url: 'https://translate.yandex.net/api/v1.5/tr.json/translate',
+        url: transl ? config.URL_TRANSL : config.URL_DICT,
         dataType: 'json',
-        data: {
-          key: API_KEY_TRANS,
-          text: text,
-          lang: fromLang + '-' + toLang
-        }
+        key: transl ? config.API_KEY_TRANSL : config.API_KEY_DICT,
+        text: text,
+        lang: fromLang + '-' + toLang
       }
-      let queryStr = this.objToQueryStr(queryObj, 'lookup')
+      let queryStr = this.objToQueryStr(queryObj, '')
       this.$axios(
         queryStr).then(result => {
         console.log(result)
@@ -63,32 +63,9 @@ export default {
     }
   },
   mounted () {
-    // translateTest()
-    // Call example: https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=APIkey&lang=en-ru&text=time
-    // let yandexTranslateApiKey = 'trnsl.1.1.20181030T164747Z.50350640be185f5d.a9c2d0892171111c7027edd85669141908d3301a'
-
-    // var API_KEY_DICT = 'dict.1.1.20160504T082227Z.3ae50a41970727a5.c82f9dd5b83ce1eeccb9b5a35faf42712e9608b4'
-    var API_KEY_TRANS = 'trnsl.1.1.20160504T085023Z.3a0c0aab2bdd4774.7fd9d801d4ca73846151ec98418a94568793d90c'
-    // https://tech.yandex.com/keys
-
-    // translate("car",'en','es')
-    // definition("car",'en','en')
-
     let fromLang = 'en'
     let toLang = 'ru'
-    let queryObj = {
-      // url: 'https://dictionary.yandex.net/api/v1/dicservice.json/lookup',
-      url: 'https://translate.yandex.net/api/v1.5/tr.json/translate',
-      dataType: 'json',
-      data: {
-        key: API_KEY_TRANS,
-        text: 'text',
-        lang: fromLang + '-' + toLang
-      }
-    }
-    let queryStr = this.objToQueryStr(queryObj, 'lookup')
-    console.log(queryStr)
-    console.log(this.translate('text', 'en', 'ru'))
+    this.yaDict('text', fromLang, toLang, true)
   }
 }
 </script>
