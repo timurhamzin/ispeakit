@@ -210,7 +210,7 @@ export default {
       if (lexeme) {
         let repeated = this.$store.state.lexemes[elId].repeated
         return {
-          repeated: true,
+          repeated: repeated > 0,
           repeated0: repeated === 0,
           repeated1: repeated === 1,
           repeated2: repeated === 2,
@@ -233,18 +233,20 @@ export default {
 
 <style>
   .repeated {
-    background-color: brown;
+    background-color: rgba(0, 255, 0, 1);
+    color: black;
+    font-weight: 300;
   }
   .repeated0 {
-    opacity: 0.8;
+    font-style: italic;
   }
   .repeated1 {
-    opacity: 0.6;
+    background: rgba(0, 255, 0, 0.6);
   }
   .repeated2 {
-    opacity: 0.4;
+    background: rgba(0, 255, 0, 0.4);
   }
   .repeated3 {
-    opacity: 0.2;
+    background: rgba(0, 255, 0, 0.2);
   }
 </style>
