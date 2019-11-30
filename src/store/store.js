@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import {translate} from '../utils.js'
+import config from '../config.js'
 Vue.use(Vuex)
 
 export const store = new Vuex.Store({
@@ -32,6 +33,16 @@ export const store = new Vuex.Store({
         }
       } else {
         state.lexemes[el.id] = {lexeme: el.id, repetitions: 5, repeated: 1}
+      }
+      if (!('transl' in state.lexemes[el.id])) {
+        translate(state.lexemes[el.id]['lexeme'], config.FROMLANG, config.TOLANG, true).then(
+          translResponse => {
+            if (translResponse) {
+              state.lexemes[el.id]['transl'] = translResponse.data.text
+              state.lexemes['count'] += 1
+            }
+          }
+        )
       }
       state.lastViewedLexeme.elId = el.id
       state.lexemes['count'] += 1
